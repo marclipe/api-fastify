@@ -3,7 +3,7 @@ import { z } from 'zod'
 
 // process.env é um objeto
 const envSchema = z.object({
-  NODE_ENV: z.enum(['devolopment', 'test', 'production']).default('production'),
+  NODE_ENV: z.enum(['development', 'test', 'production']).default('production'),
   DATABASE_URL: z.string(),
   PORT: z.number().default(3333),
 })
